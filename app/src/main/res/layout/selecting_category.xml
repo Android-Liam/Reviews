@@ -68,9 +68,11 @@
                         android:gravity="center">
 
                         <LinearLayout
+                            android:id="@+id/category_select_1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:clickable="true">
 
                             <ImageView
                                 android:layout_width="75dp"
@@ -88,9 +90,11 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:id="@+id/category_select_2"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:clickable="true">
 
                             <ImageView
                                 android:layout_width="75dp"
@@ -108,9 +112,11 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:id="@+id/category_select_3"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:clickable="true">
 
                             <ImageView
                                 android:layout_width="75dp"
