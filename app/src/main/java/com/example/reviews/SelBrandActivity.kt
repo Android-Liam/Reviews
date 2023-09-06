@@ -5,10 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.reviews.databinding.SelectingBrandBinding
 
-class selBrandActivity: AppCompatActivity() {
+class SelBrandActivity: AppCompatActivity() {
 
     private lateinit var binding: SelectingBrandBinding
-    private lateinit var recyclerViewAdapter: RecyclerViewAdapter
+    private lateinit var recyclerViewAdapter: SelBrandReAdaptaer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,19 +20,19 @@ class selBrandActivity: AppCompatActivity() {
         binding.recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false)
 
         // 2. RecyclerView에 어댑터 연결
-        recyclerViewAdapter = RecyclerViewAdapter()
+        recyclerViewAdapter = SelBrandReAdaptaer()
         binding.recyclerView.adapter = recyclerViewAdapter
 
         // 3. 데이터 추가 (예시)
-        val recyclerItems = mutableListOf<RecyclerItem>()
+        val selBrandReItems = mutableListOf<SelBrandReItem>()
 
-        for(i in 1 until 15) {
-            recyclerItems.add(RecyclerItem("$i", "Hello $i"))
+        for(i in 1 until 10) {
+            selBrandReItems.add(SelBrandReItem("Brand Name", "평점 평균: 4.3${i}"))
         }
 
-        recyclerItems.add(RecyclerItem("Item 1", "Content 1"))
+        selBrandReItems.add(SelBrandReItem("굽네 치킨", "평점 평균: 4.5"))
 
-        recyclerViewAdapter.submitList(recyclerItems)
+        recyclerViewAdapter.submitList(selBrandReItems)
 
     }
 

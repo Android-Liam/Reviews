@@ -10,7 +10,7 @@ import com.example.reviews.databinding.ItemLayoutBinding
 
 
 // 5. RecyclerView 어댑터 클래스 정의
-class RecyclerViewAdapter : ListAdapter<RecyclerItem, RecyclerViewAdapter.ViewHolder>(DiffCallback()) {
+class SelBrandReAdaptaer : ListAdapter<SelBrandReItem, SelBrandReAdaptaer.ViewHolder>(DiffCallback()) {
 
     // 6. 아이템 뷰를 생성하고 뷰 홀더 반환
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -33,23 +33,23 @@ class RecyclerViewAdapter : ListAdapter<RecyclerItem, RecyclerViewAdapter.ViewHo
     // 8. 뷰 홀더 클래스 정의
     class ViewHolder(private val binding: ItemLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(recyclerItem: RecyclerItem) {
-            binding.nameTextView.text = recyclerItem.name
-            binding.contentTextView.text = recyclerItem.content
+        fun bind(selBrandReItem: SelBrandReItem) {
+            binding.nameTextView.text = selBrandReItem.name
+            binding.contentTextView.text = selBrandReItem.content
         }
     }
 
     // 10. 아이템 갱신을 위한 콜백 클래스 정의
-    private class DiffCallback : DiffUtil.ItemCallback<RecyclerItem>() {
+    private class DiffCallback : DiffUtil.ItemCallback<SelBrandReItem>() {
 
-        override fun areItemsTheSame(oldRecyclerItem: RecyclerItem, newRecyclerItem: RecyclerItem): Boolean {
+        override fun areItemsTheSame(oldSelBrandReItem: SelBrandReItem, newSelBrandReItem: SelBrandReItem): Boolean {
             // 아이템이 같은지 여부를 확인
-            return oldRecyclerItem == newRecyclerItem
+            return oldSelBrandReItem == newSelBrandReItem
         }
 
-        override fun areContentsTheSame(oldRecyclerItem: RecyclerItem, newRecyclerItem: RecyclerItem): Boolean {
+        override fun areContentsTheSame(oldSelBrandReItem: SelBrandReItem, newSelBrandReItem: SelBrandReItem): Boolean {
             // 아이템 내용이 같은지 여부를 확인
-            return oldRecyclerItem == newRecyclerItem
+            return oldSelBrandReItem == newSelBrandReItem
         }
     }
 }
