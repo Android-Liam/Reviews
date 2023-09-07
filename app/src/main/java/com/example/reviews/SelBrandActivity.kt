@@ -24,15 +24,15 @@ class SelBrandActivity: AppCompatActivity() {
         binding.recyclerView.adapter = recyclerViewAdapter
 
         // 3. 데이터 추가 (예시)
-        val selBrandReItems = mutableListOf<SelBrandReItem>()
+        val SelBrandReItems = mutableListOf<SelBrandReItem>()
 
         for(i in 1 until 10) {
-            selBrandReItems.add(SelBrandReItem("Brand Name $i", "평점 평균: 4.3${i}"))
+            SelBrandReItems.add(SelBrandReItem("Brand Name $i", "평점 평균: 4.3${i}"))
         }
 
-        selBrandReItems.add(SelBrandReItem("굽네 치킨", "평점 평균: 4.5"))
+        SelBrandReItems.add(SelBrandReItem("굽네 치킨", "평점 평균: 4.5"))
 
-        recyclerViewAdapter.submitList(selBrandReItems)
+        recyclerViewAdapter.submitList(SelBrandReItems)
 
     }
 

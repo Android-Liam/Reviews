@@ -6,15 +6,15 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.reviews.databinding.ItemLayoutBinding
+import com.example.reviews.databinding.DetailBrandItemBinding
 
 
 // 5. RecyclerView 어댑터 클래스 정의
-class SelBrandReAdaptaer : ListAdapter<SelBrandReItem, SelBrandReAdaptaer.ViewHolder>(DiffCallback()) {
+class DetailBrandReAdaptaer : ListAdapter<DetailBrandReItem, DetailBrandReAdaptaer.ViewHolder>(DiffCallback()) {
 
     // 6. 아이템 뷰를 생성하고 뷰 홀더 반환
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = ItemLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = DetailBrandItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
@@ -31,25 +31,25 @@ class SelBrandReAdaptaer : ListAdapter<SelBrandReItem, SelBrandReAdaptaer.ViewHo
     }
 
     // 8. 뷰 홀더 클래스 정의
-    class ViewHolder(private val binding: ItemLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
+    class ViewHolder(private val binding: DetailBrandItemBinding) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(SelBrandReItemBrandReItem: SelBrandReItem) {
-            binding.nameTextView.text = SelBrandReItemBrandReItem.name
-            binding.contentTextView.text = SelBrandReItemBrandReItem.content
+        fun bind(detailBrandReItem: DetailBrandReItem) {
+            binding.nameTextView.text = detailBrandReItem.name
+            binding.contentTextView.text = detailBrandReItem.content
         }
     }
 
     // 10. 아이템 갱신을 위한 콜백 클래스 정의
-    private class DiffCallback : DiffUtil.ItemCallback<SelBrandReItem>() {
+    private class DiffCallback : DiffUtil.ItemCallback<DetailBrandReItem>() {
 
-        override fun areItemsTheSame(oldSelBrandReItem: SelBrandReItem, newSelBrandReItem: SelBrandReItem): Boolean {
+        override fun areItemsTheSame(oldDetailBrandReItem: DetailBrandReItem, newDetailBrandReItem: DetailBrandReItem): Boolean {
             // 아이템이 같은지 여부를 확인
-            return oldSelBrandReItem == newSelBrandReItem
+            return oldDetailBrandReItem == newDetailBrandReItem
         }
 
-        override fun areContentsTheSame(oldSelBrandReItem: SelBrandReItem, newSelBrandReItem: SelBrandReItem): Boolean {
+        override fun areContentsTheSame(oldDetailBrandReItem: DetailBrandReItem, newDetailBrandReItem: DetailBrandReItem): Boolean {
             // 아이템 내용이 같은지 여부를 확인
-            return oldSelBrandReItem == newSelBrandReItem
+            return oldDetailBrandReItem == newDetailBrandReItem
         }
     }
 }
