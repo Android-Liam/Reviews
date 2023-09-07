@@ -92,11 +92,17 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="3">
+                            android:layout_weight="3"
+                            android:orientation="vertical">
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="브랜드 이름" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
                                 android:text="브랜드 평점" />
 
                         </LinearLayout>
@@ -108,20 +114,14 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"/>
 
-                    <LinearLayout
+                    <androidx.recyclerview.widget.RecyclerView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:layout_weight="4"
                         android:background="@color/yellow">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="Menu List View"
-                            android:gravity="center"/>
 
-
-                    </LinearLayout>
+                    </androidx.recyclerview.widget.RecyclerView>
 
                     <LinearLayout
                         android:layout_width="match_parent"

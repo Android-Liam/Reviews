@@ -3,17 +3,17 @@ package com.example.reviews
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.reviews.databinding.SelectingBrandBinding
+import com.example.reviews.databinding.DetailBrandBinding
 
-class SelBrandActivity: AppCompatActivity() {
+class DetailBrandActivity: AppCompatActivity() {
 
-    private lateinit var binding: SelectingBrandBinding
+    private lateinit var binding: DetailBrandBinding
     private lateinit var recyclerViewAdapter: SelBrandReAdaptaer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = SelectingBrandBinding.inflate(layoutInflater)
+        binding = DetailBrandBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // 1. RecyclerView 초기화 및 레이아웃 매니저 설정
