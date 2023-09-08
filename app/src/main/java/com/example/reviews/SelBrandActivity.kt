@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.reviews.databinding.SelectingBrandBinding
 
-class SelBrandActivity : AppCompatActivity(), OnItemClickListener {
+class SelBrandActivity : AppCompatActivity(), SelBrandOnItemClickListener {
 
     private lateinit var binding: SelectingBrandBinding
     private lateinit var recyclerViewAdapter: SelBrandReAdaptaer

@@ -8,12 +8,12 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.reviews.databinding.ItemLayoutBinding
 
-interface OnItemClickListener {
+interface SelBrandOnItemClickListener {
     fun onItemClick(item: SelBrandReItem)
 }
 
 // 5. RecyclerView 어댑터 클래스 정의
-class SelBrandReAdaptaer(private val listener: OnItemClickListener) :
+class SelBrandReAdaptaer(private val listener: SelBrandOnItemClickListener) :
     ListAdapter<SelBrandReItem, SelBrandReAdaptaer.ViewHolder>(DiffCallback()) {
 
     // 6. 아이템 뷰를 생성하고 뷰 홀더 반환

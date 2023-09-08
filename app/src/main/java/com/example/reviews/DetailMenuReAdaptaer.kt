@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.reviews.databinding.DetailMenuItemBinding
 
-
 // 5. RecyclerView 어댑터 클래스 정의
 class DetailMenuReAdaptaer : ListAdapter<DetailMenuReItem, DetailMenuReAdaptaer.ViewHolder>(DiffCallback()) {
 
