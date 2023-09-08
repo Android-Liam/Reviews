@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.reviews.databinding.ItemLayoutBinding
+import com.example.reviews.databinding.SelBrandItemBinding
 
 interface SelBrandOnItemClickListener {
     fun onItemClick(item: SelBrandReItem)
@@ -18,7 +18,7 @@ class SelBrandReAdaptaer(private val listener: SelBrandOnItemClickListener) :
 
     // 6. 아이템 뷰를 생성하고 뷰 홀더 반환
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = ItemLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = SelBrandItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
@@ -35,7 +35,7 @@ class SelBrandReAdaptaer(private val listener: SelBrandOnItemClickListener) :
     }
 
     // 8. 뷰 홀더 클래스 정의
-    class ViewHolder(private val binding: ItemLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
+    class ViewHolder(private val binding: SelBrandItemBinding) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(SelBrandReItemBrandReItem: SelBrandReItem) {
             binding.nameTextView.text = SelBrandReItemBrandReItem.name

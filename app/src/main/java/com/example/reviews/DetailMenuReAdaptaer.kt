@@ -25,7 +25,7 @@ class DetailMenuReAdaptaer : ListAdapter<DetailMenuReItem, DetailMenuReAdaptaer.
         // Item을 클릭 할 시 ClickEvent
         holder.itemView.setOnClickListener {
             // 아이템 클릭 시 처리할 작업을 여기에 추가
-            Log.d("RecyclerView", "Item clicked: ${currentItem.name}")
+            Log.d("RecyclerView", "Item clicked: ${currentItem.userName}")
         }
     }
 
@@ -33,8 +33,15 @@ class DetailMenuReAdaptaer : ListAdapter<DetailMenuReItem, DetailMenuReAdaptaer.
     class ViewHolder(private val binding: DetailMenuItemBinding) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(DetailMenuReItem: DetailMenuReItem) {
-            binding.nameTextView.text = DetailMenuReItem.name
-            binding.contentTextView.text = DetailMenuReItem.content
+            binding.userNameTV.text = DetailMenuReItem.userName
+            binding.userDefaultSpicyTV.text = DetailMenuReItem.userDefaultSpicy
+            binding.userDefaultAmountTV.text = DetailMenuReItem.userDefaultAmount
+            binding.userDefaultGourmetTV.text = DetailMenuReItem.userDefaultGourmet
+
+            binding.spicyTV.text = DetailMenuReItem.spicy
+            binding.amountTV.text = DetailMenuReItem.amount
+            binding.ratingTV.text = DetailMenuReItem.rating
+            binding.repurchaseIntentionTV.text = DetailMenuReItem.repurchaseIntention
         }
     }
 

@@ -3,36 +3,134 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="30dp">
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/beige">
 
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@color/black"
-        android:text="Image"
-        android:textColor="@color/white"
-        android:gravity="center" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/userNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닉네임"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/userDefaultSpicyTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7단계 맵크나이트"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/userDefaultAmountTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="소식가"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/userDefaultGourmetTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="미식가"
+            android:paddingLeft="10dp"/>
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="10dp">
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/nameTextView"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name"/>
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
 
-        <TextView
-            android:id="@+id/contentTextView"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="맵기"/>
+
+            <TextView
+                android:id="@+id/spicyTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="☆☆☆☆☆"/>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Content"/>
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="양"/>
+
+            <TextView
+                android:id="@+id/amountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="☆☆☆☆☆"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체 평점"/>
+
+            <TextView
+                android:id="@+id/ratingTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="☆☆☆☆☆"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="재구매 의사"/>
+
+            <TextView
+                android:id="@+id/repurchaseIntentionTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="☆☆☆☆☆"/>
+
+        </LinearLayout>
+
 
     </LinearLayout>
+
+
 
 
 </LinearLayout>

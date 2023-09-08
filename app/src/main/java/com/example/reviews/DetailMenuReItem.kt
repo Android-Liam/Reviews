@@ -2,7 +2,10 @@ package com.example.reviews
 
 import android.util.Log
 
-data class DetailMenuReItem(val name: String, val content: String)
+data class DetailMenuReItem(
+    val userName: String, val userDefaultSpicy: String, val userDefaultAmount: String, val userDefaultGourmet: String,
+    val spicy: String, val amount: String, val rating: String, val repurchaseIntention: String,
+)
 
 // Item CLickEvent
 fun onItemClick(item: DetailMenuReItem) {

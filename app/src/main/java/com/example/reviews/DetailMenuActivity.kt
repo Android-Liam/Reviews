@@ -27,10 +27,16 @@ class DetailMenuActivity: AppCompatActivity() {
         val detailMenuReItems = mutableListOf<DetailMenuReItem>()
 
         for(i in 1 until 10) {
-            detailMenuReItems.add(DetailMenuReItem("Brand Name $i", "평점 평균: 4.3${i}"))
+            detailMenuReItems.add(DetailMenuReItem(
+                "닉네임$i", "${i}단계 맵크나이트", "소식가", "미식가",
+                "★☆☆☆☆", "★★★★☆", "★★☆☆☆", "없음"
+            ))
         }
 
-        detailMenuReItems.add(DetailMenuReItem("굽네 치킨", "평점 평균: 4.5"))
+        detailMenuReItems.add(DetailMenuReItem(
+            "닉네임", "7단계 맵크나이트", "소식가", "미식가",
+            "★☆☆☆☆", "★★★★☆", "★★☆☆☆", "없음"
+        ))
 
         recyclerViewAdapter.submitList(detailMenuReItems)
 
