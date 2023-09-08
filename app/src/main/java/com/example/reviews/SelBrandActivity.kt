@@ -1,11 +1,13 @@
 package com.example.reviews
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.reviews.databinding.SelectingBrandBinding
 
-class SelBrandActivity: AppCompatActivity() {
+class SelBrandActivity : AppCompatActivity(), OnItemClickListener {
 
     private lateinit var binding: SelectingBrandBinding
     private lateinit var recyclerViewAdapter: SelBrandReAdaptaer
@@ -20,7 +22,8 @@ class SelBrandActivity: AppCompatActivity() {
         binding.recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false)
 
         // 2. RecyclerView에 어댑터 연결
-        recyclerViewAdapter = SelBrandReAdaptaer()
+        // RecyclerView 어댑터를 생성할 때 현재 액티비티(this)를 전달합니다.
+        recyclerViewAdapter = SelBrandReAdaptaer(this)
         binding.recyclerView.adapter = recyclerViewAdapter
 
         // 3. 데이터 추가 (예시)
@@ -34,6 +37,15 @@ class SelBrandActivity: AppCompatActivity() {
 
         recyclerViewAdapter.submitList(SelBrandReItems)
 
+
+    }
+
+    // 아이템 클릭 시 호출될 메서드를 구현합니다.
+    override fun onItemClick(item: SelBrandReItem) {
+        // 아이템 클릭 시 처리할 작업을 수행하고, 화면을 전환합니다.
+        Log.d("RecyclerView", "Item clicked: ${item.name}")
+        val intent = Intent(this, DetailBrandActivity::class.java)
+        startActivity(intent)
     }
 
 }
