@@ -131,7 +131,7 @@
                             android:orientation="horizontal">
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="4.5">
 
@@ -147,7 +147,7 @@
 
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1">
 
@@ -161,9 +161,56 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="4.5"/>
+                                android:layout_weight="4.5">
+
+                                <TextView
+                                    android:id="@+id/spicy_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="★"
+                                    android:textSize="30sp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/spicy_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="★"
+                                    android:textSize="30sp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/spicy_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="★"
+                                    android:textSize="30sp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/spicy_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="★"
+                                    android:textSize="30sp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/spicy_5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="★"
+                                    android:textSize="30sp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
 
                         </LinearLayout>
 
@@ -174,7 +221,7 @@
                             android:orientation="horizontal">
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="4.5">
 
@@ -189,7 +236,7 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1">
 
@@ -203,9 +250,56 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="4.5"/>
+                                android:layout_weight="4.5">
+
+                                <TextView
+                                    android:id="@+id/amount_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="★"
+                                    android:textSize="30sp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/amount_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="★"
+                                    android:textSize="30sp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/amount_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="★"
+                                    android:textSize="30sp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/amount_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="★"
+                                    android:textSize="30sp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/amount_5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="★"
+                                    android:textSize="30sp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
 
                         </LinearLayout>
 
@@ -216,7 +310,7 @@
                             android:orientation="horizontal">
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="4.5">
 
@@ -231,7 +325,7 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1">
 
@@ -245,9 +339,55 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="4.5"/>
+                                android:layout_weight="4.5">
+                                <TextView
+                                    android:id="@+id/star_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="★"
+                                    android:textSize="30sp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/star_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="★"
+                                    android:textSize="30sp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/star_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="★"
+                                    android:textSize="30sp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/star_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="★"
+                                    android:textSize="30sp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/star_5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="★"
+                                    android:textSize="30sp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
 
                         </LinearLayout>
 
@@ -258,7 +398,7 @@
                             android:orientation="horizontal">
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="4.5">
 
@@ -273,7 +413,7 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1">
 
@@ -287,9 +427,33 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="4.5"/>
+                                android:layout_weight="4.5">
+
+                                <RadioGroup
+                                    android:id="@+id/radioGroup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_gravity="center">
+
+                                    <RadioButton
+                                        android:id="@+id/yesRadioButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Yes"
+                                        android:checked="true"/>
+
+                                    <RadioButton
+                                        android:id="@+id/noRadioButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="No" />
+                                </RadioGroup>
+
+
+                            </LinearLayout>
 
                         </LinearLayout>
 
