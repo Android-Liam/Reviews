@@ -8,9 +8,13 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.reviews.databinding.DetailBrandItemBinding
 
+interface DetailBrandOnItemClickListener {
+    fun onItemClick(item: DetailBrandReItem)
+}
 
 // 5. RecyclerView 어댑터 클래스 정의
-class DetailBrandReAdaptaer : ListAdapter<DetailBrandReItem, DetailBrandReAdaptaer.ViewHolder>(DiffCallback()) {
+class DetailBrandReAdaptaer(private val listener: DetailBrandOnItemClickListener) :
+    ListAdapter<DetailBrandReItem, DetailBrandReAdaptaer.ViewHolder>(DiffCallback()) {
 
     // 6. 아이템 뷰를 생성하고 뷰 홀더 반환
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -26,7 +30,7 @@ class DetailBrandReAdaptaer : ListAdapter<DetailBrandReItem, DetailBrandReAdapta
         // Item을 클릭 할 시 ClickEvent
         holder.itemView.setOnClickListener {
             // 아이템 클릭 시 처리할 작업을 여기에 추가
-            Log.d("RecyclerView", "Item clicked: ${currentItem.name}")
+            listener.onItemClick(currentItem)
         }
     }
 

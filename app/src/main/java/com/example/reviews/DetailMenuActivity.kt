@@ -1,9 +1,12 @@
 package com.example.reviews
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.reviews.databinding.DetailMenuBinding
+import com.example.reviews.databinding.ReviewMenuBinding
 
 class DetailMenuActivity: AppCompatActivity() {
 
@@ -39,6 +42,12 @@ class DetailMenuActivity: AppCompatActivity() {
         ))
 
         recyclerViewAdapter.submitList(detailMenuReItems)
+
+        binding.reviewBtn.setOnClickListener {
+            Log.d("Log", "Let's go Review!")
+            val intent = Intent(this, ReviewMenuActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
