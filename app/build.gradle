@@ -35,6 +35,7 @@ android {
     //====== ViewBinding 설정
     buildFeatures{
         viewBinding true
+        //noinspection DataBindingWithoutKapt
         dataBinding true
     }
 }
