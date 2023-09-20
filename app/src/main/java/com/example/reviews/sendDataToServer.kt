@@ -7,9 +7,14 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/*
+* App -> Server
+* 서버에 데이터 전송을 위한 코드
+*/
+
 fun sendDataToServer(data: SendRegisterDataClass) {
     val retrofit = Retrofit.Builder()
-        .baseUrl("http://172.30.1.48:8080/") // Spring Boot 서버의 URL로 변경
+        .baseUrl("http://172.30.1.48:8080/") // Spring Boot Server URL
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
